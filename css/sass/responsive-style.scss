@@ -38,11 +38,41 @@
 
 body {
 	word-wrap: break-word;
-	background: #fff;
+	text-align: justify;
+	// background: #fff;
+}
+
+.site-main:not(.full-width) {
+	border-right-style: solid;
+	border-right-width: thin;
+	border-right-color: gray;
 }
 
 li {
 	margin-bottom: 5px;
+}
+
+.iconbox {
+  padding: 20px;
+  // border: 1px solid #555;
+  display: inline-flex;
+}
+.iconbox p {
+  margin-bottom: 0;
+}
+
+.icon-wrap {
+  background: #eee;
+  padding: 7px;
+  margin-right: 15px;
+  text-align:center;
+}
+.icon-wrap i {
+  font-size: 2.5rem; width:3rem;
+}
+
+.post-entry {
+	overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -389,7 +419,7 @@ li {
 }
 
 #site-branding {
-	@include make-md-column(8);
+	@include make-md-column(6);
 	.site-name {
 		a {
 			color: $gray-dark;
@@ -413,14 +443,18 @@ li {
 	@include clearfix();
 	@extend .container;
 	padding: 15px;
-	background: #fff;
+	background: #cccccc;
 	.front-page & {
 		width: 100%;
 		padding: 0;
-		background: #0079C0;
+		background: #7d0000;
 		margin: 0;
-		color: #fff;
+		color: $text-color-frontpage;
 	}
+}
+
+div#callout_content.content-area {
+	background-size: cover;
 }
 
 main {
@@ -585,7 +619,11 @@ blockquote cite {
 --------------------------------------------------------------*/
 
 .breadcrumb-list {
-	padding-top: 15px;
+	padding: 15px 0 15px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: x-small;
 }
 
 article .post-data {

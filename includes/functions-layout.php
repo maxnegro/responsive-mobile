@@ -57,6 +57,9 @@ function responsive_mobile_get_layout() {
 			}
 		}
 
+	}
+	elseif ( is_single() && (get_post_type( $post->ID ) == 'collezione')) {
+		$layout = 'full-width-page';
 	} /* Single blog posts */
 	elseif ( is_single() ) {
 		$layout_meta_value = ( false != get_post_meta( $post->ID, '_responsive_mobile_layout', true ) ? get_post_meta( $post->ID, '_responsive_mobile_layout', true ) : 'default' );

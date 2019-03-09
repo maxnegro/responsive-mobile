@@ -21,8 +21,8 @@ if ( ! defined( 'WPINC' ) ) {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php responsive_mobile_entry_top(); ?>
-	
-	<?php get_template_part( 'template-parts/post-meta-page' ); 
+
+	<?php get_template_part( 'template-parts/post-meta-page' );
 
 	// Added filter to get featured_image option working.
 	$featured_image = apply_filters( 'responsive_mobile_featured_image', '1' );
@@ -37,7 +37,7 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="post-entry">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'responsive-mobile' ),
+				'before' => '<div class="page-links">' . __( 'Pagine:', 'responsive-mobile' ),
 				'after'  => '</div>',
 		) ); ?>
 		<?php get_template_part( 'template-parts/post-data' ); ?>

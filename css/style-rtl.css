@@ -368,11 +368,11 @@ html {
 }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
   line-height: 1.42857;
-  color: #333333;
-  background-color: #fff;
+  color: #012c0b;
+  background-color: #eaa81b;
 }
 
 input,
@@ -385,11 +385,11 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #7d0000;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #2a6496;
+  color: #310000;
   text-decoration: underline;
 }
 a:focus {
@@ -419,7 +419,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #eaa81b;
   border: 1px solid #ddd;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -435,8 +435,8 @@ img {
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -477,7 +477,7 @@ hr {
 /* HEADINGS ===================*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "Bree Serif", serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -504,8 +504,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 22px;
+  margin-bottom: 11px;
 }
 h1 small,
 h1 .small, .h1 small,
@@ -522,8 +522,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 h4 small,
 h4 .small, .h4 small,
@@ -538,32 +538,32 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 41px;
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4, .h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h5, .h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h6, .h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* BODY TEXT ===================*/
 p {
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 }
 
 /* EMPHASIS ===================*/
@@ -586,7 +586,7 @@ mark,
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 ul ul,
 ul ol,
@@ -598,7 +598,7 @@ ol ol {
 /* DESCRIPTION LISTS ===================*/
 dl {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 dt,
@@ -622,9 +622,9 @@ abbr[data-original-title] {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 20px;
   border-right: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -652,7 +652,7 @@ blockquote:after {
 }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-style: normal;
   line-height: 1.42857;
 }
@@ -686,9 +686,9 @@ kbd {
 
 pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 15px;
   line-height: 1.42857;
   word-break: break-all;
   word-wrap: break-word;
@@ -722,7 +722,7 @@ th {
 
 table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 table > thead > tr > th,
 table > thead > tr > td,
@@ -762,8 +762,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 24px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -815,7 +815,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
 }
@@ -838,9 +838,9 @@ input[type="tel"],
 input[type="color"] {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -997,12 +997,12 @@ input[type="button"] {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   border-radius: 0;
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #7d0000;
+  border-color: #640000;
 }
 input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, input[type="submit"].active, .open > input[type="submit"].dropdown-toggle,
 input[type="reset"]:hover,
@@ -1016,8 +1016,8 @@ input[type="button"]:active,
 input[type="button"].active, .open >
 input[type="button"].dropdown-toggle {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #4a0000;
+  border-color: #260000;
 }
 input[type="submit"]:active, input[type="submit"].active, .open > input[type="submit"].dropdown-toggle,
 input[type="reset"]:active,
@@ -1059,13 +1059,13 @@ input[type="button"]:hover, fieldset[disabled]
 input[type="button"]:focus, fieldset[disabled]
 input[type="button"]:active, fieldset[disabled]
 input[type="button"].active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #7d0000;
+  border-color: #640000;
 }
 input[type="submit"] .badge,
 input[type="reset"] .badge,
 input[type="button"] .badge {
-  color: #428bca;
+  color: #7d0000;
   background-color: #fff;
 }
 input[type="submit"]:focus, input[type="submit"]:active:focus, input[type="submit"].active:focus,
@@ -1109,11 +1109,42 @@ input[type="button"] {
 --------------------------------------------------------------*/
 body {
   word-wrap: break-word;
-  background: #fff;
+  text-align: justify;
+}
+
+.site-main:not(.full-width) {
+  border-left-style: solid;
+  border-left-width: thin;
+  border-left-color: gray;
 }
 
 li {
   margin-bottom: 5px;
+}
+
+.iconbox {
+  padding: 20px;
+  display: inline-flex;
+}
+
+.iconbox p {
+  margin-bottom: 0;
+}
+
+.icon-wrap {
+  background: #eee;
+  padding: 7px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.icon-wrap i {
+  font-size: 2.5rem;
+  width: 3rem;
+}
+
+.post-entry {
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -1188,7 +1219,7 @@ li {
   font-size: 0.8em;
 }
 #top-menu-container .top-menu li a:hover {
-  color: #428bca;
+  color: #7d0000;
 }
 
 /*--------------------------------------------------------------
@@ -1471,7 +1502,7 @@ li {
   font-size: 0.8em;
 }
 #footer-menu-container .footer-menu li a:hover {
-  color: #428bca;
+  color: #7d0000;
 }
 
 /*--------------------------------------------------------------
@@ -1503,7 +1534,7 @@ li {
 @media (min-width: 992px) {
   #site-branding {
     float: right;
-    width: 66.66667%;
+    width: 50%;
   }
 }
 #site-branding .site-name a {
@@ -1532,7 +1563,7 @@ li {
 --------------------------------------------------------------*/
 .content-area {
   padding: 15px;
-  background: #fff;
+  background: #cccccc;
 }
 .content-area:before, .content-area:after {
   content: " ";
@@ -1544,9 +1575,13 @@ li {
 .front-page .content-area {
   width: 100%;
   padding: 0;
-  background: #0079C0;
+  background: #7d0000;
   margin: 0;
-  color: #fff;
+  color: #eaa81b;
+}
+
+div#callout_content.content-area {
+  background-size: cover;
 }
 
 main:before, main:after {
@@ -1587,29 +1622,29 @@ main #featured-content .call-to-action, main #featured-image .call-to-action {
   margin-top: 30px;
 }
 main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
-  color: #fff;
-  background-color: #0D4C82;
-  border-color: #0b3e6b;
+  color: #eaa81b;
+  background-color: #c95501;
+  border-color: #b04a01;
   padding: 15px 35px;
   font-size: 24px;
   line-height: 24px;
   border-radius: 0;
 }
 main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover, main #featured-content .call-to-action .cta-button:focus, main #featured-image .call-to-action .cta-button:focus, main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
-  color: #fff;
-  background-color: #083154;
-  border-color: #051e33;
+  color: #eaa81b;
+  background-color: #964001;
+  border-color: #733101;
 }
 main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
   background-image: none;
 }
 main #featured-content .call-to-action .cta-button.disabled, main #featured-image .call-to-action .cta-button.disabled, main #featured-content .call-to-action .cta-button.disabled:hover, main #featured-image .call-to-action .cta-button.disabled:hover, main #featured-content .call-to-action .cta-button.disabled:focus, main #featured-image .call-to-action .cta-button.disabled:focus, main #featured-content .call-to-action .cta-button.disabled:active, main #featured-image .call-to-action .cta-button.disabled:active, main #featured-content .call-to-action .cta-button.disabled.active, main #featured-image .call-to-action .cta-button.disabled.active, main #featured-content .call-to-action .cta-button[disabled], main #featured-image .call-to-action .cta-button[disabled], main #featured-content .call-to-action .cta-button[disabled]:hover, main #featured-image .call-to-action .cta-button[disabled]:hover, main #featured-content .call-to-action .cta-button[disabled]:focus, main #featured-image .call-to-action .cta-button[disabled]:focus, main #featured-content .call-to-action .cta-button[disabled]:active, main #featured-image .call-to-action .cta-button[disabled]:active, main #featured-content .call-to-action .cta-button[disabled].active, main #featured-image .call-to-action .cta-button[disabled].active, fieldset[disabled] main #featured-content .call-to-action .cta-button, fieldset[disabled] main #featured-image .call-to-action .cta-button, fieldset[disabled] main #featured-content .call-to-action .cta-button:hover, fieldset[disabled] main #featured-image .call-to-action .cta-button:hover, fieldset[disabled] main #featured-content .call-to-action .cta-button:focus, fieldset[disabled] main #featured-image .call-to-action .cta-button:focus, fieldset[disabled] main #featured-content .call-to-action .cta-button:active, fieldset[disabled] main #featured-image .call-to-action .cta-button:active, fieldset[disabled] main #featured-content .call-to-action .cta-button.active, fieldset[disabled] main #featured-image .call-to-action .cta-button.active {
-  background-color: #0D4C82;
-  border-color: #0b3e6b;
+  background-color: #c95501;
+  border-color: #b04a01;
 }
 main #featured-content .call-to-action .cta-button .badge, main #featured-image .call-to-action .cta-button .badge {
-  color: #0D4C82;
-  background-color: #fff;
+  color: #c95501;
+  background-color: #eaa81b;
 }
 main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover {
   text-decoration: none;
@@ -1759,7 +1794,11 @@ blockquote cite {
  8.8 - Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumb-list {
-  padding-top: 15px;
+  padding: 15px 0 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: x-small;
 }
 
 article .post-data {
@@ -2613,11 +2652,11 @@ main#main.sitemap .sitemap-widgets:after {
   height: auto;
   padding: 15px 23px 14px;
   text-decoration: none;
-  color: #428bca;
+  color: #7d0000;
   border-radius: 3px;
-  background-color: #f2f2f2;
+  background-color: #d89914;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   line-height: normal;
 }

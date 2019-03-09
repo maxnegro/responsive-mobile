@@ -70,9 +70,12 @@ if ( !function_exists( 'responsive_mobile_post_nav' ) ) {
 
 			<div class="nav-links">
 
+				<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&larr;</span> %title'); ?></div>
+				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&rarr;</span>'); ?></div>
+<!--
 				<div class="nav-previous"><?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'responsive-mobile' ) ); ?></div>
 				<div class="nav-next"><?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'responsive-mobile' ) ); ?></div>
-
+-->
 			</div>
 			<!-- .nav-links -->
 		</nav><!-- .navigation -->
@@ -107,7 +110,7 @@ if ( !function_exists( 'responsive_mobile_post_thumbnail' ) ) {
 if ( !function_exists( 'responsive_mobile_post_meta_data' ) ) {
 
 	function responsive_mobile_post_meta_data() {
-	
+
 		// Apply filter to get by_line_date option working.
 		$by_line_date = apply_filters( 'responsive_mobile_by_line_date', '1' );
 		if( $by_line_date ) {
@@ -124,7 +127,7 @@ if ( !function_exists( 'responsive_mobile_post_meta_data' ) ) {
 				)
 			);
 		}
-		
+
 		// Apply filter to get by_line_author option working.
 		$by_line_author = apply_filters( 'responsive_mobile_by_line_author', '1' );
 		if( $by_line_author ) {
@@ -277,6 +280,8 @@ if ( !function_exists( 'responsive_mobile_archive_title' ) ) {
 function responsive_mobile_menu_title( $display = true ) {
 
 	$page_title = __( 'Menu', 'responsive-mobile' );
+
+	$page_title = "Contenuti";
 
 	$page_title = apply_filters( 'responsive_mobile_menu_title', $page_title );
 

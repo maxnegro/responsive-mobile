@@ -7,7 +7,7 @@
     var obj = {
 
         onClick: function () {
-            $("#main-navigation").toggleClass("menu-open");
+            $("#site-navigation").toggleClass("menu-open");
         }
 
     };

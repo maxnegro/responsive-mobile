@@ -124,7 +124,8 @@ add_action( 'template_redirect', 'responsive_mobile_content_width' );
 function responsive_mobile_js() {
 
 	global $is_IE;
-	$suffix                 = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+	// $suffix                 = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+	$suffix                 = '';
 	$template_directory_uri = get_template_directory_uri();
 
 	// JS at the bottom for fast page loading.
@@ -140,12 +141,16 @@ function responsive_mobile_js() {
 
 	// Register Scripts so that it can be easily enqueued
 	wp_register_script( 'bootstrap', $template_directory_uri . '/core/bootstrap/javascripts/bootstrap' . $suffix . '.js', array( 'jquery' ), '3.1.1' );
-	wp_register_script( 'responsive-mobile-menu', get_template_directory_uri() . '/core/js/mobile-menu' . $suffix . '.js', array( 'jquery' ), '20120206', true );
+	// wp_register_script( 'responsive-mobile-menu', get_template_directory_uri() . '/core/js/mobile-menu' . $suffix . '.js', array( 'jquery' ), '20120206', true );
 	wp_register_script( 'responsive-skip-link-focus-fix', get_template_directory_uri() . '/core/js/skip-link-focus-fix' . $suffix . '.js', array(), '20130115', true );
-	
-	wp_enqueue_style( 'bootstrap', $template_directory_uri . '/libraries/bootstrap/css/bootstrap.min.css');
-	wp_enqueue_script( 'bootstrap-js', $template_directory_uri . '/libraries/bootstrap/js/bootstrap.min.js');
 
+	wp_enqueue_style( 'bootstrap', $template_directory_uri . '/core/bootstrap/stylesheets/bootstrap.css');
+	// wp_enqueue_script( 'bootstrap-js', $template_directory_uri . '/core/bootstrap/js/bootstrap.js');
+	wp_enqueue_script( 'bootstrap' );
+	// wp_enqueue_script( 'responsive-mobile-menu' );
+	wp_enqueue_script( 'responsive-skip-link-focus-fix' );
+
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Bree+Serif|Raleway', false);
 }
 add_action( 'wp_enqueue_scripts', 'responsive_mobile_js', 100 );
 
@@ -211,37 +216,37 @@ function responsive_team_meta_box_cb()
 	<p>
         <label for="responsive_meta_box_designation"><?php echo esc_html(__('Member designation','responsive')); ?></label>
         <input type="text" name="responsive_meta_box_designation" id="responsive_meta_box_designationion" value="<?php echo $responsive_meta_box_designation; ?>" />
-    </p> 
+    </p>
 	<p>
         <label for="responsive_meta_box_facebook"><?php echo esc_html(__('Facebook Link','responsive')); ?></label>
         <input type="text" name="responsive_meta_box_facebook" id="responsive_meta_box_facebook" value="<?php echo $responsive_meta_box_facebook; ?>" />
-    </p> 
+    </p>
 	<p>
         <label for="responsive_meta_box_twitter"><?php echo esc_html(__('Twitter Link','responsive')); ?></label>
         <input type="text" name="responsive_meta_box_twitter" id="responsive_meta_box_twitter" value="<?php echo $responsive_meta_box_twitter; ?>" />
-    </p> 
+    </p>
 	<p>
         <label for="responsive_meta_box_googleplus"><?php echo esc_html(__('GooglePlus Link','responsive')); ?></label>
         <input type="text" name="responsive_meta_box_googleplus" id="responsive_meta_box_googleplus" value="<?php echo $responsive_meta_box_googleplus; ?>" />
-    </p> 
+    </p>
 	<p>
         <label for="responsive_meta_box_text_linkedin"><?php echo esc_html(__('LinkedIn Link','responsive')); ?></label>
         <input type="text" name="responsive_meta_box_text_linkedin" id="responsive_meta_box_text_linkedin" value="<?php echo $responsive_meta_box_linkedin; ?>" />
-    </p> 
-  
-<?php 
+    </p>
+
+<?php
 }
-add_action( 'save_post', 'responsive_team_meta_box_save' ); 
+add_action( 'save_post', 'responsive_team_meta_box_save' );
 function responsive_team_meta_box_save( $post_id )
 {
-	$allowed = array( 
+	$allowed = array(
         'a' => array( // on allow a tags
             'href' => array() // and those anchors can only have href attribute
         )
     );
-	
+
 	if( isset( $_POST['responsive_meta_box_designation'] ) )
-        update_post_meta( $post_id, 'responsive_meta_box_designation', wp_kses( $_POST['responsive_meta_box_designation'], $allowed ) ); 
+        update_post_meta( $post_id, 'responsive_meta_box_designation', wp_kses( $_POST['responsive_meta_box_designation'], $allowed ) );
 	if( isset( $_POST['responsive_meta_box_facebook'] ) )
         update_post_meta( $post_id, 'responsive_meta_box_facebook', wp_kses( $_POST['responsive_meta_box_facebook'], $allowed ) );
 	if( isset( $_POST['responsive_meta_box_twitter'] ) )
@@ -249,6 +254,5 @@ function responsive_team_meta_box_save( $post_id )
 	if( isset( $_POST['responsive_meta_box_googleplus'] ) )
         update_post_meta( $post_id, 'responsive_meta_box_googleplus', wp_kses( $_POST['responsive_meta_box_googleplus'], $allowed ) );
 	if( isset( $_POST['responsive_meta_box_text_linkedin'] ) )
-        update_post_meta( $post_id, 'responsive_meta_box_text_linkedin', wp_kses( $_POST['responsive_meta_box_text_linkedin'], $allowed ) );	
+        update_post_meta( $post_id, 'responsive_meta_box_text_linkedin', wp_kses( $_POST['responsive_meta_box_text_linkedin'], $allowed ) );
 }
-

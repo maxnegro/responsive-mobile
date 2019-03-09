@@ -94,7 +94,7 @@ jQuery(function($) {
     var obj = {
 
         onClick: function () {
-            $("#main-navigation").toggleClass("menu-open");
+            $("#site-navigation").toggleClass("menu-open");
         }
 
     };
@@ -1188,7 +1188,7 @@ jQuery(function($) {
  * GPL V2 License (c) CyberChimps
  */
 jQuery(document).ready(function ($) {
-	$('a[href="#scroll-top"]').click(function () {
+	$('a[href=#scroll-top]').click(function () {
 		$('html, body').animate({
 			scrollTop: 0
 		}, 'slow');

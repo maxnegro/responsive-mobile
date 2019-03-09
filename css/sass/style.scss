@@ -44,7 +44,8 @@
     @return unquote("\"") + $str + unquote("\"");
 }
 //Variables
-$font-family-base: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+// $font-family-base: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family-base: 'Raleway', sans-serif;;
 
 // RESPONSIVE 2.0 VARIABLES
 $shadow: 0 1px 1px rgba(0, 0, 0, .075);
@@ -54,8 +55,8 @@ $font-size-xlarge: 24px;
 $line-height-xlarge: 24px;
 $border-radius-base: 0;
 
-$btn-cta-color:  #fff;
-$btn-cta-bg:     #0D4C82;
+$btn-cta-color:  #eaa81b;
+$btn-cta-bg:     #c95501;
 $btn-cta-border: darken($btn-cta-bg, 5%);
 
 ///*--------------------------------------------------------------

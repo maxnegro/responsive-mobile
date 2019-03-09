@@ -157,11 +157,11 @@ module.exports = function(grunt) {
 					'core/bootstrap/javascripts/bootstrap/carousel.js',
 					'core/bootstrap/javascripts/bootstrap/collapse.js',
 					'core/bootstrap/javascripts/bootstrap/dropdown.js',
-					'core/bootstrap/javascripts/bootstrap/popover.js',
 					'core/bootstrap/javascripts/bootstrap/scrollspy.js',
 					'core/bootstrap/javascripts/bootstrap/tab.js',
 					'core/bootstrap/javascripts/bootstrap/tooltip.js',
-					'core/bootstrap/javascripts/bootstrap/transition.js'
+					'core/bootstrap/javascripts/bootstrap/transition.js',
+					'core/bootstrap/javascripts/bootstrap/popover.js'
 				],
 				dest: 'core/bootstrap/javascripts/bootstrap.js',
 			},
