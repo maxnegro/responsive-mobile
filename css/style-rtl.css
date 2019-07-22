@@ -2668,6 +2668,10 @@ main#main.sitemap .sitemap-widgets:after {
   display: block;
 }
 
+.site-content {
+  float: none;
+}
+
 /*--------------------------------------------------------------
 16.0 - Plugin specific styles
 --------------------------------------------------------------*/
