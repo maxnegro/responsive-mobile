@@ -125,7 +125,7 @@ function responsive_mobile_js() {
 
 	global $is_IE;
 	// $suffix                 = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-	$suffix                 = '';
+	$suffix                 = '.min';
 	$template_directory_uri = get_template_directory_uri();
 
 	// JS at the bottom for fast page loading.
@@ -140,11 +140,13 @@ function responsive_mobile_js() {
 	}
 
 	// Register Scripts so that it can be easily enqueued
-	wp_register_script( 'bootstrap', $template_directory_uri . '/core/bootstrap/javascripts/bootstrap' . $suffix . '.js', array( 'jquery' ), '3.1.1' );
+	wp_register_script( 'bootstrap', $template_directory_uri . '/libraries/bootstrap-4.3/js/bootstrap' . $suffix . '.js', array( 'jquery' ), '3.1.1' );
+	// wp_register_script( 'bootstrap', $template_directory_uri . '/core/bootstrap/javascripts/bootstrap' . $suffix . '.js', array( 'jquery' ), '3.1.1' );
 	// wp_register_script( 'responsive-mobile-menu', get_template_directory_uri() . '/core/js/mobile-menu' . $suffix . '.js', array( 'jquery' ), '20120206', true );
 	wp_register_script( 'responsive-skip-link-focus-fix', get_template_directory_uri() . '/core/js/skip-link-focus-fix' . $suffix . '.js', array(), '20130115', true );
 
-	wp_enqueue_style( 'bootstrap', $template_directory_uri . '/core/bootstrap/stylesheets/bootstrap.css');
+	wp_enqueue_style( 'bootstrap', $template_directory_uri . '/libraries/bootstrap-4.3/css/bootstrap.css');
+	// wp_enqueue_style( 'bootstrap', $template_directory_uri . '/core/bootstrap/stylesheets/bootstrap.css');
 	// wp_enqueue_script( 'bootstrap-js', $template_directory_uri . '/core/bootstrap/js/bootstrap.js');
 	wp_enqueue_script( 'bootstrap' );
 	// wp_enqueue_script( 'responsive-mobile-menu' );
@@ -152,7 +154,7 @@ function responsive_mobile_js() {
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Bree+Serif|Raleway', false);
 }
-add_action( 'wp_enqueue_scripts', 'responsive_mobile_js', 100 );
+add_action( 'wp_enqueue_scripts', 'responsive_mobile_js');
 
 /**
  * A safe way of adding stylesheets to a WordPress generated page.

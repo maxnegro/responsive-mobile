@@ -41,7 +41,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 	<div class="clearfix" style="margin-top: 20px"> </div>
 
-		<div class="well well-lg">
+		<div class="card card-body bg-light">
 			<h2>Informazioni per le visite</h2>
 			<!-- <div class="container"> -->
 				<div class="row">
@@ -66,7 +66,7 @@ if ( ! defined( 'WPINC' ) ) {
 			);
 			foreach (array_keys($mm_icon) as $campo) {
 				if (!empty($custom['mostradimostre_main_'.$campo][0])) {
-					printf('<aside class="col-sm">');
+					printf('<aside class="col-12">');
 					printf('<div class="iconbox">');
 					printf('<div class="icon-wrap"><i class="%s"></i></div> ', $mm_icon[$campo]);
 					// printf('<div class="icon-wrap"><span class="glyphicon glyphicon-%s" aria-hidden="true"></span></div> ', $mm_icon[$campo]);
@@ -87,7 +87,7 @@ if ( ! defined( 'WPINC' ) ) {
 				}
 			}
 			if (!empty($custom['mostradimostre_main_fulladdress'][0])) {
-				printf('<div>');
+				printf('<div class="w-100 p-5">');
 				printf('<iframe style="width: 100%%; height: 480px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?q=%s&z=14&output=embed"></iframe>', $custom['mostradimostre_main_fulladdress'][0]);
 				printf('</div>');
 			}
