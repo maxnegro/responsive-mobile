@@ -2672,6 +2672,18 @@ main#main.sitemap .sitemap-widgets:after {
   float: none;
 }
 
+.wpem-single-event-page .wpem-single-event-wrapper {
+  border: 0;
+}
+
+.wpem-row {
+  margin: 0;
+}
+
+.wpem-single-event-page .wpem-single-event-wrapper .wpem-single-event-body .wpem-single-event-left-content::after {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 16.0 - Plugin specific styles
 --------------------------------------------------------------*/

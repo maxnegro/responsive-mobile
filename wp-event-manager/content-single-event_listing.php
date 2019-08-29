@@ -107,7 +107,8 @@ do_action('set_single_listing_view_count');
 
 					<div class="clearfix" style="margin-top: 20px"> </div>
 					<div class="card card-body bg-transparent col-12">
-						<div class="row color-light">
+						<h3>Informazioni utili</h3>
+						<div class="row">
 							<?php
 							$mm_icon = [
 								'_event_link_to_eventpage' => 'fas fa-globe',
