@@ -48,7 +48,7 @@ if ( ! defined( 'WPINC' ) ) {
 			<?php
 			$mm_icon = [
 				'orari' => 'fas fa-clock',
-				'prezzi' => 'fas fa-euro',
+				'prezzi' => 'fa fa-euro',
 				'telcellulare' => 'fas fa-mobile',
 				'telfisso' => 'fas fa-phone',
 				'email' => 'fas fa-envelope',
